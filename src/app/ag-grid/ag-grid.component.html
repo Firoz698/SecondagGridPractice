@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            
+
+<ag-grid-angular 
+class="ag-theme-quartz"
+style="height: 300px; width: 100%;"
+(cellClicked)="onSelectionChanged($event)"
+(gridReady)="onGridReady($event)"
+[rowData]="rowData" [columnDefs]="colDefs"
+[defaultColDef]="defaultColDef"
+[rowSelection]="'multiple'"
+>
+</ag-grid-angular>
+        </div>
+    </div>
+</div>
